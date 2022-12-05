@@ -1,0 +1,44 @@
+<form action="users/{{this.uid}}/change-role" method="get"> 
+E-Mail: {{this.email}}, 
+Role: {{#if this.customClaims.role}}{{this.customClaims.role}}{{else}}User{{/if}}
+<br/>
+    <label for="role">Change Role</label>
+    <select
+        name="role" id="role"
+>
+    <option value="">Select Role</option>
+    
+    <option value="specialschueler">SpecialSchüler</option>
+    <option value="admin">Admin</option>
+    <option value="lehrer">Lehrer</option>
+    <option value="developer">Developer</option>
+    <option value="moderator">Moderator</option>
+    <option value="moderator">Management</option>
+    <option value="fuenfa">5a</option>
+    <option value="fuenfb">5b</option>
+    <option value="fuenfc">5c</option>
+    <option value="sechsa">6a</option>
+    <option value="sechsb">6b</option>
+    <option value="sechsc">6c</option>
+    <option value="sechsd">6d</option>
+    <option value="siebena">7a</option>
+    <option value="siebenb">7b</option>
+    <option value="siebenc">7c</option>
+    <option value="siebend">7d</option>
+    <option value="siebene">7e</option>
+    <option value="achta">8a</option>
+    <option value="achtb">8b</option>
+    <option value="achtc">8c</option>
+    <option value="neuna">9a</option>
+    <option value="neunb">9b</option>
+    <option value="neunc">9c</option>
+    <option value="neund">9d</option>
+    <option value="zehna">10a</option>
+    <option value="zehnb">10b</option>
+    <option value="zehnc">10c</option>
+    <option value="qelf">Q11</option>
+    <option value="qzwoelf">Q12</option>
+</select> <button type="submit">Save</button>
+</form>
+
+
